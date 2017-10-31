@@ -8,6 +8,7 @@ import {
   TextInput,
   TouchableOpacity
 } from 'react-native';
+import SubmitButton from 'react-native-submit-button';
 
 export default class RegForm extends Component<{}> {
   render() {
@@ -21,10 +22,11 @@ export default class RegForm extends Component<{}> {
         <TextInput style={styles.textinput} placeholder="Enter your Employers name" underlineColorAndroid={'transparent'} />
         <TextInput style={styles.textinput} placeholder="Enter your Employers email address" underlineColorAndroid={'transparent'} />
         <Text style={styles.bodytext}>Clicking this button will send your employer an email asking them to confirm your details.  Once they have done that you will receive your Login information.</Text>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.btntext}>Finish Registration</Text>
-        </TouchableOpacity>
 
+        <SubmitButton
+          buttonText="Finish Registration"
+          primaryColor="#B2D468"
+          />
       </View>
     );
   }
