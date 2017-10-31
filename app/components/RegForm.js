@@ -22,7 +22,7 @@ export default class RegForm extends Component<{}> {
         <TextInput style={styles.textinput} placeholder="Enter your Employers email address" underlineColorAndroid={'transparent'} />
         <Text style={styles.bodytext}>Clicking this button will send your employer an email asking them to confirm your details.  Once they have done that you will receive your Login information.</Text>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.btntext}>Finish Registration</Text>
+          <Text style={styles.btntext}>SUBMIT</Text>
         </TouchableOpacity>
 
       </View>
@@ -55,12 +55,14 @@ const styles = StyleSheet.create({
   button: {
     alignSelf: 'stretch',
     alignItems: 'center',
-    padding: 20,
+    padding: 15,
     backgroundColor: '#B2D468',
     marginTop: 30,
+    borderRadius: 20,
   },
   btntext: {
     color: '#fff',
     fontWeight: 'bold',
+    fontSize: 15,
   }
 })
